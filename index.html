@@ -10,6 +10,47 @@
     <title>tipper</title>
 </head>
 <body>
-    
+    <main>
+        <h1>Tipper</h1>
+        <section class="tipCalculation">
+            <div class="bills">
+                <label for="yourBill">Bill</label>
+                <input type="number" name="your bill" id="yourBill">
+            </div>
+            <div class="tipPercentage">
+                <div class="percentageSlider">
+                    <label for="tipInput">Select tip</label>
+                    <span id="tipPercent">0%</span>
+                </div>
+                <input type="range" value="0" name="tip input" id="tipInput">
+            </div>
+            <div class="tipAmount">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="totalAmount">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+        <section class="splitSection">
+            <div class="numberOfPersons">
+                <div class="personRange">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue">1 Person</span>
+                </div>
+                <input type="range" min="1" value="1" name="split Input" id="splitInput">
+            </div>
+            <div class="billForPersons">
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+            <div class="tipForEach">
+                <span>Tip each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
