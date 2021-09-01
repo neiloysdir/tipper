@@ -10,7 +10,10 @@ html {
     color: rgb(75, 75, 75);
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    display: grid;
+    align-content: center;
 }
+
 
 main {
     max-width: 50rem;
