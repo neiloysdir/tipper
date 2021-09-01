@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
     <title>tipper</title>
 </head>
@@ -15,21 +17,21 @@
         <section class="tipCalculation">
             <div class="bills">
                 <label for="yourBill">Bill</label>
-                <input type="number" name="your bill" id="yourBill">
+                <input type="number" placeholder="Your bill" name="your bill" id="yourBill">
             </div>
             <div class="tipPercentage">
                 <div class="percentageSlider">
                     <label for="tipInput">Select tip</label>
                     <span id="tipPercent">0%</span>
                 </div>
-                <input type="range" value="0" name="tip input" id="tipInput">
+                <input type="range" value="0" name="tip input" id="tipInput" class="range">
             </div>
             <div class="tipAmount">
                 <span>Tip</span>
                 <span id="tipValue"></span>
             </div>
             <hr>
-            <div class="totalAmount">
+            <div class="totalAmount total">
                 <span>Total</span>
                 <span id="totalWithTip"></span>
             </div>
@@ -40,7 +42,7 @@
                     <label for="splitInput">Split</label>
                     <span id="splitValue">1 Person</span>
                 </div>
-                <input type="range" min="1" value="1" name="split Input" id="splitInput">
+                <input type="range" min="1" value="1" name="split Input" id="splitInput" class="range">
             </div>
             <div class="billForPersons">
                 <span>Bill each</span>

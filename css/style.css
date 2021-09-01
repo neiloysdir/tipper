@@ -1,0 +1,113 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background:#63aee4;
+    font-size: 10px;
+    color: rgb(75, 75, 75);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+main {
+    max-width: 50rem;
+    margin: 5rem auto;
+    background: linear-gradient(30deg, #7474bf, #348ac7);
+    padding: 3rem 1.6rem 6rem 1.6rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 5px #348ac7;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
+section {
+    background: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
+    box-shadow:  inset 0 2px 5px #348ac7;
+}
+
+section > div {
+    padding: 1.6rem 0;
+}
+
+.bills {
+    display: flex;
+}
+
+.bills label {
+    flex: 1;
+    align-self: center;
+}
+
+.bills input {
+    flex: 3;
+}
+
+input[type="number"] {
+    font-family: inherit;
+    background: #f4f4f5;
+    font-size: 1.6rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    box-shadow: inset 0 1px 2px #348ac7;;
+}
+
+.percentageSlider,
+.tipAmount,
+.totalAmount,
+.personRange,
+.billForPersons,
+.tipForEach {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    margin-top: 1.6rem;
+    border-radius: 0.4rem;
+    outline-color: #348ac7;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #348ac7;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #348ac7;
+    cursor: pointer;
+}
+
+.range::-moz-focus-outer {
+    border: 0;
+}
