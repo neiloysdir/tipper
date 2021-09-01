@@ -13,9 +13,22 @@ function update() {
     let newBillEach = (bill + tipValue) / splitAmount;
     
     document.getElementById("tipPercent").innerHTML = tipPercentage + "%";
-    document.getElementById("tipValue").innerHTML = tipValue;
-    document.getElementById("totalWithTip").innerHTML = bill + tipValue;
-    document.getElementById("splitValue").innerHTML = splitAmount + " person";
-    document.getElementById("billEach").innerHTML = newBillEach;
-    document.getElementById("tipEach").innerHTML = newtipEach;
+    document.getElementById("tipValue").innerHTML = formatMoney(tipValue);
+    document.getElementById("totalWithTip").innerHTML = formatMoney(bill + tipValue);
+    document.getElementById("splitValue").innerHTML = numberOfPeople(splitAmount);
+    document.getElementById("billEach").innerHTML = formatMoney(newBillEach);
+    document.getElementById("tipEach").innerHTML = formatMoney(newtipEach);
+}
+
+function formatMoney(value)
+{
+    value = Math.ceil(value * 100) / 100;
+    value = value.toFixed(2);
+    return "$ " + value;
+}
+
+function numberOfPeople(value)
+{
+    if (value === "1") return value + " person"
+    return value + " people"
 }
